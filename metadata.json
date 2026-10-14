@@ -1,0 +1,6 @@
+{
+  "name": "Spendly",
+  "description": "Vedic Minimal personal expense tracker with smart Indian budgeting, UPI & payment tracking, and spending analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

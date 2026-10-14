@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:translateX="0"
+        android:translateY="0">
+        <!-- Rounded Card / Wallet Background Badge -->
+        <path
+            android:fillColor="#0A462A"
+            android:pathData="M34,30 h40 a10,10 0 0 1 10,10 v30 a10,10 0 0 1 -10,10 h-40 a10,10 0 0 1 -10,-10 v-30 a10,10 0 0 1 10,-10 z" />
+
+        <!-- Accent Dynamic Slanted Ribbon / Flow -->
+        <path
+            android:fillColor="#10B981"
+            android:pathData="M38,40 h32 a4,4 0 0 1 4,4 v4 h-40 v-4 a4,4 0 0 1 4,-4 z" />
+
+        <!-- Rupee Symbol & Upward Growth Arrow Emblem in Pure Mint -->
+        <path
+            android:fillColor="#6CF8BB"
+            android:pathData="M45,54 h18 v3 h-18 z" />
+        <path
+            android:fillColor="#6CF8BB"
+            android:pathData="M45,60 h14 v3 h-14 z" />
+            
+        <!-- Upward trend arrow -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M60,69 L70,55 L65,55 L65,51 L75,51 L75,61 L71,61 L71,57 L62,69 Z" />
+
+        <!-- Spark dot -->
+        <path
+            android:fillColor="#6CF8BB"
+            android:pathData="M73,43 a3,3 0 1,0 0.001,0" />
+    </group>
+</vector>

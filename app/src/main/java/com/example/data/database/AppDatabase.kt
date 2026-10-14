@@ -1,0 +1,39 @@
+package com.example.data.database
+
+import android.content.Context
+import androidx.room.Database
+import androidx.room.Room
+import androidx.room.RoomDatabase
+import com.example.data.dao.AppSettingsDao
+import com.example.data.dao.ExpenseDao
+import com.example.data.model.AppSettingsEntity
+import com.example.data.model.ExpenseEntity
+
+@Database(
+    entities = [ExpenseEntity::class, AppSettingsEntity::class],
+    version = 1,
+    exportSchema = false
+)
+abstract class AppDatabase : RoomDatabase() {
+    abstract fun expenseDao(): ExpenseDao
+    abstract fun appSettingsDao(): AppSettingsDao
+
+    companion object {
+        @Volatile
+        private var INSTANCE: AppDatabase? = null
+
+        fun getDatabase(context: Context): AppDatabase {
+            return INSTANCE ?: synchronized(this) {
+                val instance = Room.databaseBuilder(
+                    context.applicationContext,
+                    AppDatabase::class.java,
+                    "spendly_database"
+                )
+                    .fallbackToDestructiveMigration()
+                    .build()
+                INSTANCE = instance
+                instance
+            }
+        }
+    }
+}
