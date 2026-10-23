@@ -34,7 +34,7 @@ The application uses a **local-first approach**, with expense data persisted loc
 
 ### 🎨 AI-Assisted UI/UX Design — Google Stitch
 
-The initial Spendly interface was explored and generated using **Google Stitch**, an experimental/beta-stage AI-powered design tool from Google.
+The initial Spendly interface was explored and generated using **Google Stitch**, an experimental AI-powered design tool from Google.
 
 The goal was to move from natural-language product requirements to a structured mobile UI design before application development.
 
